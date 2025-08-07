@@ -8,5 +8,6 @@ Create a variable called daysInWeek with the value 7. Don't write the type — l
 
 fun main() {
     val daysInWeek = 7
-    println(daysInWeek::class.simpleName);
+    println("There are $daysInWeek days in a week.")
+    println("The type of the variable daysInWeek is ${daysInWeek::class.simpleName}")
 }
