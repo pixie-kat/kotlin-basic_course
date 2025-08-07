@@ -10,5 +10,6 @@ fun main(){
     println("What is your age?")
     val myAge = readln()
     val isAgeGreater = myAge.toInt() >= requiredAge
-    println ("Are you older than the required age? $isAgeGreater")
+    if (isAgeGreater) println("You are older than the required Age")
+    else println("You are not old enough!")
 }
