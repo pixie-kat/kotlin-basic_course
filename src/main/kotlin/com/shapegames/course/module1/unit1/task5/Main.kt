@@ -9,3 +9,9 @@ Add a comment explaining a variable that stores a user's name.
 /* Here we ask the user to enter their username and in the next step it gets saved as a variable.
 In the print line we print the user input out
  */
+
+fun main() {
+    println("Please enter your username")
+    val userName = readln()
+    println("$userName is the user's name")
+}
