@@ -5,7 +5,3 @@ Assignment 4: Explicit Type Declaration
 Task:
 Make a variable pi with type Double and value 3.14159.
 */
-fun main() {
-    val pi: Double = 3.14159;
-    println(pi)
-}

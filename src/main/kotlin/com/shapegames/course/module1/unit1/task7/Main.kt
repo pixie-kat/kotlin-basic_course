@@ -5,9 +5,3 @@ Assignment 7: Template Strings
 Task:
 Combine firstName and lastName into one variable called fullName.
 */
-fun main() {
-    val firstName: String = "Kathrin"
-    val lastName: String = "Knudsen"
-    val fullName: String = "My full name is $firstName $lastName"
-    println(fullName)
-}
