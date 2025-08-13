@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2ExtraIF()
+    task2When()
 }
 
 //IF expressions
@@ -200,5 +200,49 @@ fun task2ExtraIF(){
     }
     else{
         print(("The numbers are equal"))
+    }
+}
+
+//When
+/*
+Task 1:
+Given a variable day (1–7), print the name of the day (1–Monday, 2–Tuesday, ..., 7–Sunday).
+
+val day = 3
+*/
+fun task1ExtraWhen(){
+    val day = 3
+    when (day) {
+        1 -> println("Monday")
+        2 -> println("Tuesday")
+        3 -> println("Wednesday")
+        4 -> println("Thursday")
+        5 -> println("Friday")
+        6 -> println("Saturday")
+        7 -> println("Sunday")
+        else -> println("Not a valid weekday")
+    }
+}
+
+/*
+Task 2:
+Given a variable score (0–100), print:
+
+"A" if score >= 90
+"B" if score >= 80
+"C" if score >= 70
+"D" if score >= 60
+"F" otherwise
+val score = 85
+ */
+
+fun task2When(){
+    val score = 85
+    when (score){
+        in 90 .. 100 -> println("A")
+        in 80..89 -> println("B")
+        in 70 .. 79 -> println("C")
+        in 60 .. 69 -> println("D")
+        else -> println("F")
     }
 }
