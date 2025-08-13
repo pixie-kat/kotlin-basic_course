@@ -1,8 +1,9 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2Loop()
+    task2Array()
 }
+
 //IF expressions
 /*Task 1 IF:
 Write a program that checks if a number is positive, negative, or zero.
@@ -12,13 +13,11 @@ val number = -3
  */
 fun task1IF() {
     val number = -3
-    if(number > 0) {
+    if (number > 0) {
         println("The number $number is positive")
-    }
-    else if(number < 0) {
+    } else if (number < 0) {
         println("The number $number is negative")
-    }
-    else {
+    } else {
         println("The number $number is zero")
     }
 }
@@ -30,11 +29,10 @@ val number = 7
  */
 fun task2IF() {
     val number = 4
-    val isEven : Boolean = number % 2 == 0
-    if(isEven){
+    val isEven: Boolean = number % 2 == 0
+    if (isEven) {
         println("The number $number is an even number")
-        }
-    else{
+    } else {
         println("The number $number is an odd number")
     }
 
@@ -52,7 +50,7 @@ Write a program that takes a variable grade (Int) from 1 to 5 and prints:
 val grade = 4
 */
 
-fun task1WHEN(){
+fun task1WHEN() {
     val grade = 4
     when (grade) {
         5 -> println("Excellent")
@@ -73,20 +71,21 @@ Use when and ranges.
 val month = 7
  */
 
-fun task2WHEN(){
+fun task2WHEN() {
     val month = 7
-    when (month){
-        in 1 .. 3 -> println("Winter")
-        in 4 ..6 -> println("Spring")
-        in 7 .. 9 -> println("Summer")
-        in 10 .. 12 -> println("Autumn")
+    when (month) {
+        in 1..3 -> println("Winter")
+        in 4..6 -> println("Spring")
+        in 7..9 -> println("Summer")
+        in 10..12 -> println("Autumn")
     }
 }
+
 //Loops and for loops
 /*Task 1:
 Print all numbers from 1 to 10 using a for loop.
 */
-fun task1Loop(){
+fun task1Loop() {
     for (i in 1..10) {
         print("$i \t")
     }
@@ -104,7 +103,62 @@ Print the multiplication table for 5 (from 1 to 10), like:
 
 fun task2Loop() {
     val number = 5
-    for(i in 1.. 10){
-        print("${number*i} \t")
+    for (i in 1..10) {
+        println("$number x $i = ${number * i}")
     }
+}
+
+//Ranges
+/*Task 1:
+Print all even numbers from 2 to 20 using a range and a loop.
+*/
+fun task1Range() {
+    for (number in 1..20) {
+        val isEven = number % 2 == 0
+        if (isEven) {
+            print("$number \t")
+        }
+    }
+}
+
+/*
+Task 2:
+Print numbers from 10 down to 1 using a reversed range.
+ */
+fun task2Range() {
+    val range = 10 downTo 1
+    for (number in range)
+        print("$number \t")
+}
+
+//Arrays
+/*
+Task 1:
+Create an array of names ("Tom", "Sam", "Bob").
+Print each name on a new line using a loop.
+*/
+
+fun task1Array() {
+    val names = arrayOf("Tom", "Sam", "Bob")
+    for (name in names) {
+        println(name)
+    }
+}
+
+/*
+Task 2:
+Create an array of 5 numbers.
+Print the sum of all numbers in the array.
+ */
+
+fun task2Array() {
+    val numbers = arrayOf(1, 3, 5, 7, 8985)
+    // here the option with using the kotlin specific sum expression to make my life easy
+    println(numbers.sum())
+    //here using a for loop and calculating the sum
+    var sum = 0
+    for (n in numbers) {
+        sum = sum + n
+    }
+    print(sum)
 }
