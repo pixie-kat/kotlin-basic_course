@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2ExtraLoop()
+    task1IF()
 }
 
 //IF expressions
@@ -278,8 +278,18 @@ fun task2ExtraLoop(){
 Task 1:
 Print all numbers from 5 to 15.
 */
+fun task1ExtraRange(){
+    for(number in 5..15){
+        print("$number \t")
+    }
+}
 
 /*
 Task 2:
 Print all numbers from 20 down to 10.
  */
+fun task2ExtraRange(){
+    for(number in 20 downTo  10){
+        print("$number \t")
+    }
+}
