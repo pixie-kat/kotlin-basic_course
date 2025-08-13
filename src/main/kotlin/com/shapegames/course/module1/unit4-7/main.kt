@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2Array()
+    task2ExtraIF()
 }
 
 //IF expressions
@@ -161,4 +161,44 @@ fun task2Array() {
         sum = sum + n
     }
     print(sum)
+}
+
+//Extra Practice
+//If/Else
+/*
+Task 1:
+Given a variable age, print "Adult" if age is 18 or older, otherwise print "Minor".
+
+val age = 17
+*/
+
+fun task1ExtraIf(){
+    val age = 17
+    if(age <18){
+        println("Minor")
+    }
+    else{
+        println("Adult")
+    }
+}
+
+/*
+Task 2:
+Given two variables a and b, print the larger number.
+
+val a = 15
+val b = 20
+ */
+fun task2ExtraIF(){
+    val a = 15
+    val b = 20
+    if(a>b){
+        print(a)
+    }
+    else if(b>a){
+        print(b)
+    }
+    else{
+        print(("The numbers are equal"))
+    }
 }
