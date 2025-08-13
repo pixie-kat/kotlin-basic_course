@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2When()
+    task2ExtraLoop()
 }
 
 //IF expressions
@@ -236,7 +236,7 @@ Given a variable score (0–100), print:
 val score = 85
  */
 
-fun task2When(){
+fun task2ExtraWhen(){
     val score = 85
     when (score){
         in 90 .. 100 -> println("A")
@@ -246,3 +246,40 @@ fun task2When(){
         else -> println("F")
     }
 }
+
+//Loops
+/*Task 1:
+Print all odd numbers from 1 to 15.
+*/
+fun task1ExtraLoop(){
+    for(numbers in 1 ..15) {
+        val isOdd = numbers % 2 == 1
+        if (isOdd) {
+            print("$numbers \t")
+        }
+    }
+}
+
+/*
+Task 2:
+Print the sum of all numbers from 1 to 5.
+ */
+fun task2ExtraLoop(){
+    var sum = 0
+    for(number in 1 ..5){
+        sum = sum + number
+    }
+    print(sum)
+}
+
+
+//Ranges
+/*
+Task 1:
+Print all numbers from 5 to 15.
+*/
+
+/*
+Task 2:
+Print all numbers from 20 down to 10.
+ */
