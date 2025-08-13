@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task2WHEN()
+    task2Loop()
 }
 //IF expressions
 /*Task 1 IF:
@@ -80,5 +80,31 @@ fun task2WHEN(){
         in 4 ..6 -> println("Spring")
         in 7 .. 9 -> println("Summer")
         in 10 .. 12 -> println("Autumn")
+    }
+}
+//Loops and for loops
+/*Task 1:
+Print all numbers from 1 to 10 using a for loop.
+*/
+fun task1Loop(){
+    for (i in 1..10) {
+        print("$i \t")
+    }
+}
+
+/*
+Task 2:
+Print the multiplication table for 5 (from 1 to 10), like:
+
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
+ */
+
+fun task2Loop() {
+    val number = 5
+    for(i in 1.. 10){
+        print("${number*i} \t")
     }
 }
