@@ -1,7 +1,7 @@
 package org.example.com.shapegames.course.module1.`unit4-7`
 
 fun main() {
-    task1IF()
+    task1If()
 }
 
 //IF expressions
@@ -11,7 +11,7 @@ Print a message for each case.
 
 val number = -3
  */
-fun task1IF() {
+fun task1If() {
     val number = -3
     if (number > 0) {
         println("The number $number is positive")
@@ -27,7 +27,7 @@ Check if a number is even or odd. Print the result.
 
 val number = 7
  */
-fun task2IF() {
+fun task2If() {
     val number = 4
     val isEven: Boolean = number % 2 == 0
     if (isEven) {
@@ -50,7 +50,7 @@ Write a program that takes a variable grade (Int) from 1 to 5 and prints:
 val grade = 4
 */
 
-fun task1WHEN() {
+fun task1When() {
     val grade = 4
     when (grade) {
         5 -> println("Excellent")
@@ -71,7 +71,7 @@ Use when and ranges.
 val month = 7
  */
 
-fun task2WHEN() {
+fun task2When() {
     val month = 7
     when (month) {
         in 1..3 -> println("Winter")
@@ -172,12 +172,11 @@ Given a variable age, print "Adult" if age is 18 or older, otherwise print "Mino
 val age = 17
 */
 
-fun task1ExtraIf(){
+fun task1ExtraIf() {
     val age = 17
-    if(age <18){
+    if (age < 18) {
         println("Minor")
-    }
-    else{
+    } else {
         println("Adult")
     }
 }
@@ -189,16 +188,14 @@ Given two variables a and b, print the larger number.
 val a = 15
 val b = 20
  */
-fun task2ExtraIF(){
+fun task2ExtraIf() {
     val a = 15
     val b = 20
-    if(a>b){
+    if (a > b) {
         print(a)
-    }
-    else if(b>a){
+    } else if (b > a) {
         print(b)
-    }
-    else{
+    } else {
         print(("The numbers are equal"))
     }
 }
@@ -210,7 +207,7 @@ Given a variable day (1–7), print the name of the day (1–Monday, 2–Tuesday
 
 val day = 3
 */
-fun task1ExtraWhen(){
+fun task1ExtraWhen() {
     val day = 3
     when (day) {
         1 -> println("Monday")
@@ -236,13 +233,13 @@ Given a variable score (0–100), print:
 val score = 85
  */
 
-fun task2ExtraWhen(){
+fun task2ExtraWhen() {
     val score = 85
-    when (score){
-        in 90 .. 100 -> println("A")
+    when (score) {
+        in 90..100 -> println("A")
         in 80..89 -> println("B")
-        in 70 .. 79 -> println("C")
-        in 60 .. 69 -> println("D")
+        in 70..79 -> println("C")
+        in 60..69 -> println("D")
         else -> println("F")
     }
 }
@@ -251,8 +248,8 @@ fun task2ExtraWhen(){
 /*Task 1:
 Print all odd numbers from 1 to 15.
 */
-fun task1ExtraLoop(){
-    for(numbers in 1 ..15) {
+fun task1ExtraLoop() {
+    for (numbers in 1..15) {
         val isOdd = numbers % 2 == 1
         if (isOdd) {
             print("$numbers \t")
@@ -264,9 +261,9 @@ fun task1ExtraLoop(){
 Task 2:
 Print the sum of all numbers from 1 to 5.
  */
-fun task2ExtraLoop(){
+fun task2ExtraLoop() {
     var sum = 0
-    for(number in 1 ..5){
+    for (number in 1..5) {
         sum = sum + number
     }
     print(sum)
@@ -278,8 +275,8 @@ fun task2ExtraLoop(){
 Task 1:
 Print all numbers from 5 to 15.
 */
-fun task1ExtraRange(){
-    for(number in 5..15){
+fun task1ExtraRange() {
+    for (number in 5..15) {
         print("$number \t")
     }
 }
@@ -288,8 +285,8 @@ fun task1ExtraRange(){
 Task 2:
 Print all numbers from 20 down to 10.
  */
-fun task2ExtraRange(){
-    for(number in 20 downTo  10){
+fun task2ExtraRange() {
+    for (number in 20 downTo 10) {
         print("$number \t")
     }
 }
