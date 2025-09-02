@@ -17,12 +17,18 @@ fun main() {
 //    println(mathematics(1,2))
 
 //task 7.1
-//    operate(3,3, ::add2)
+//    operate(3, 3, ::add2)
 //    operate(3, 3, ::substract2)
 //    operate(3, 3, ::multiply2)
 
 //task 7.2
-    chooseGreeting(true)
+//    chooseGreeting(true) ()
+//    chooseGreeting2(false) ()
+
+//task 7.3
+//    repeatAction (::greet)
+//    repeatAction(chooseGreeting(true))
+
 }
 
 
@@ -54,18 +60,34 @@ fun add2(x: Int, y: Int): Int {
 }
 
 //Task 7.2: Create a function called chooseGreeting that returns a function. If you pass in true, it should return a function that prints "Good Morning". If you pass in false, it should return a function that prints "Good Night". Show how to call the returned function.)
-fun chooseGreeting(message: Boolean) {
-    if (message == true) {
-        println("Good Morning")
-        return
+fun chooseGreeting(isMorning: Boolean) : () -> Unit  {
+    when(isMorning) {
+        true -> return ::morning
+        false -> return ::evening
     }
+}
+
+//if instead of when
+fun chooseGreeting2(isMorning: Boolean) : () -> Unit {
+    if(isMorning == true) {
+        return ::morning
+    }
+    return ::evening
+}
+
+fun morning() {
+    println("Good Morning")
+}
+fun evening() {
     println("Good Night")
 }
 
-
 //Task 7.3: Write a function called repeatAction that takes a function with no parameters and repeats it 3 times.
-
-
+fun repeatAction(repeat: () -> Unit) {
+    repeat()
+    repeat()
+    repeat()
+}
 
 //Unit 8 - Anonymous Functions
 //Task 8.1: Create an anonymous function that adds two Int numbers. Assign it to a variable and call it with 7 and 3.
