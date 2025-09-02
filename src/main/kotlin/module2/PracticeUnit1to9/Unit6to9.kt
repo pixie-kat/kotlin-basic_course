@@ -17,11 +17,12 @@ fun main() {
 //    println(mathematics(1,2))
 
 //task 7.1
-    operate(3,3, ::add2)
-    operate(3, 3, ::substract2)
-    operate(3, 3, ::multiply2)
+//    operate(3,3, ::add2)
+//    operate(3, 3, ::substract2)
+//    operate(3, 3, ::multiply2)
 
-
+//task 7.2
+    chooseGreeting(true)
 }
 
 
@@ -53,8 +54,12 @@ fun add2(x: Int, y: Int): Int {
 }
 
 //Task 7.2: Create a function called chooseGreeting that returns a function. If you pass in true, it should return a function that prints "Good Morning". If you pass in false, it should return a function that prints "Good Night". Show how to call the returned function.)
-fun chooseGreeting(message: () -> Unit) {
-
+fun chooseGreeting(message: Boolean) {
+    if (message == true) {
+        println("Good Morning")
+        return
+    }
+    println("Good Night")
 }
 
 
