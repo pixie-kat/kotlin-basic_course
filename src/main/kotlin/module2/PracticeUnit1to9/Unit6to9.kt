@@ -2,8 +2,8 @@ package module2.PracticeUnit1to9
 
 fun main() {
 //task 6.1
-//    val greeting:() -> Unit = ::greet
-//    greeting()
+    val greeting:() -> Unit = ::greet
+    greeting()
 
 //task 6.2
 //    val operation: (Int, Int) -> Int = ::multiply2
@@ -39,6 +39,17 @@ fun main() {
 //task 8.2
 //    val myFunc = getAnonymous()
 //    println(myFunc(5,3))
+
+//task 9.1
+//    helloLambda()
+
+//task 9.2
+//    upperCaseLambda("kotlin")
+
+//task 9.3
+//    println(applyOperation(5, 3, {x: Int, y: Int -> x + y}))
+//    println(applyOperation(5, 3, {x: Int, y: Int -> x - y}))
+//    println(applyOperation(5, 3, {x: Int, y: Int -> x * y}))
 }
 
 
@@ -115,8 +126,12 @@ fun getAnonymous(): (x: Int, y: Int) -> Int {
 
 //Unit 9 - Lambda Expressions
 //Task 9.1: Create a lambda that prints "Hello from Lambda!" and call it.
-
+val helloLambda = {println("Hello from Lambda!")}
 
 //Task 9.2: Write a lambda that takes a String and prints it in upper case. Call the lambda with the word "kotlin".
+val upperCaseLambda = {x: String -> println(x.uppercase())}
 
 //Task 9.3: Write a function called applyOperation that takes two Ints and a lambda, and returns the result. Use this function to add, subtract, and multiply numbers with different lambdas.
+fun applyOperation(x: Int, y: Int, function: (x: Int, y: Int) -> Int) : Int {
+    return function(x, y)
+}
