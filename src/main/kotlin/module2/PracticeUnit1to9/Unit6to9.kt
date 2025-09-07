@@ -29,6 +29,16 @@ fun main() {
 //    repeatAction (::greet)
 //    repeatAction(chooseGreeting(true))
 
+//task 8.1
+//    println(additionOfTwoNumbers(7,3))
+
+//task 8.2
+//    val result = doMath(2, 5, fun(x: Int, y: Int): Int = x * y)
+//    println(result)
+
+//task 8.2
+//    val myFunc = getAnonymous()
+//    println(myFunc(5,3))
 }
 
 
@@ -91,15 +101,21 @@ fun repeatAction(repeat: () -> Unit) {
 
 //Unit 8 - Anonymous Functions
 //Task 8.1: Create an anonymous function that adds two Int numbers. Assign it to a variable and call it with 7 and 3.
+val additionOfTwoNumbers = fun(x: Int, y: Int): Int = x + y
 
 //Task 8.2: Pass an anonymous function to a function called doMath that multiplies two numbers. doMath should take two Ints and a function, and return the result.
+fun doMath(x: Int, y: Int, func : (x: Int, y: Int) -> Int ):Int{
+    return func(x, y)
+}
 
 //Task 8.3: Write a function called getAnonymous that returns an anonymous function which subtracts one number from another.
-
-
+fun getAnonymous(): (x: Int, y: Int) -> Int {
+    return fun(x: Int, y: Int): Int = x - y
+}
 
 //Unit 9 - Lambda Expressions
 //Task 9.1: Create a lambda that prints "Hello from Lambda!" and call it.
+
 
 //Task 9.2: Write a lambda that takes a String and prints it in upper case. Call the lambda with the word "kotlin".
 
