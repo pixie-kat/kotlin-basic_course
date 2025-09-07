@@ -61,17 +61,16 @@ class Book(
     }
 }
 
-/*
-Unit 3: Packages and Import
-Task 1:
-Create a package called mathops. Inside it, make a function called add(a: Int, b: Int): Int that returns the sum of two numbers.
+//Unit 3: Packages and Import
+//Task 1:
+//Create a package called mathops. Inside it, make a function called add(a: Int, b: Int): Int that returns the sum of two numbers.
 
-Task 2:
-In another file, import your add function from mathops and use it to add two numbers. Print the result.
+//Task 2:
+//In another file, import your add function from mathops and use it to add two numbers. Print the result.
 
-Task 3:
-Create another package called stringops with a function called concat(a: String, b: String): String that joins two strings. Import both add and concat into a third file and use both functions.
-*/
+//Task 3:
+//Create another package called stringops with a function called concat(a: String, b: String): String that joins two strings. Import both add and concat into a third file and use both functions.
+
 
 /*
 Unit 4: Getters and Setters
