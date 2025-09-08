@@ -22,7 +22,7 @@ class Recipe(
         val _allIngredients = _ingredients
         println(_allIngredients)
     }
-    //I can
+    //I cannot call a private function outside of the class so we use a trick. otherwise I would have to change the private to a public function
     fun callPrintIngredients() {
         return printIngredients()
     }
