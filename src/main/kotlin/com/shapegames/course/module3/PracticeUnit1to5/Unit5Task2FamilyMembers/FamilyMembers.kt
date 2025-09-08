@@ -25,10 +25,9 @@ open class Person(
     public var _firstName: String,
 ){
     //A public function showFullName() that prints the full name.
-    public fun showFullName(): String {
+    public fun showFullName() {
         var _fullname = _firstName.plus(" ").plus(_lastName)
         println(_fullname)
-        return _fullname
     }
 }
 //Then, create a class Child that inherits from Person and prints the last name using a function.
