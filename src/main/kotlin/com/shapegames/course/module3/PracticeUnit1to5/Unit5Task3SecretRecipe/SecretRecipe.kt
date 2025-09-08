@@ -27,4 +27,3 @@ class Recipe(
         return printIngredients()
     }
 }
-//Try to access ingredients from another file in the same module and from a different module.
