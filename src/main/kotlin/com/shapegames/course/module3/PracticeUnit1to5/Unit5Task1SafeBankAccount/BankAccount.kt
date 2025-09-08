@@ -1,4 +1,4 @@
-package com.shapegames.course.module3.PracticeUnit1to5.SafeBankAccount
+package com.shapegames.course.module3.PracticeUnit1to5.Unit5Task1SafeBankAccount
 
 //Unit 5: Access Modifiers Practice Tasks
 //Task 1: Safe Bank Account

@@ -1,18 +1,6 @@
-package com.shapegames.course.module3.PracticeUnit1to5
+package com.shapegames.course.module3.PracticeUnit1to5.Unit5Task3SecretRecipe
 
 //Unit 5: Access Modifiers Practice Tasks
-
-//Task 2: Family Members
-//Create a class Person with:
-
-//A protected property lastName (String).
-//A public property firstName (String).
-//A public function showFullName() that prints the full name.
-//Then, create a class Child that inherits from Person and prints the last name using a function.
-
-//Try to access lastName from outside both classes.
-
-
 //Task 3: Secret Recipe
 //Create a class Recipe with:
 
