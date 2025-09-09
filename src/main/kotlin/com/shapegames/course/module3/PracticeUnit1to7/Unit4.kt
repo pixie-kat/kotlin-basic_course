@@ -1,4 +1,4 @@
-package com.shapegames.course.module3.PracticeUnit1to5
+package com.shapegames.course.module3.PracticeUnit1to7
 
 fun main() {
     val student = Student(25, "Steve")

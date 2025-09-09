@@ -1,4 +1,4 @@
-package com.shapegames.course.module3.PracticeUnit1to5.Unit5Task3SecretRecipe
+package com.shapegames.course.module3.PracticeUnit1to7.Unit5Task3SecretRecipe
 
 //Unit 5: Access Modifiers Practice Tasks
 //Task 3: Secret Recipe
