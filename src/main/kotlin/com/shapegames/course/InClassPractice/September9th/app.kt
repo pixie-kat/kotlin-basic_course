@@ -1,4 +1,4 @@
-package com.shapegames.course.InClassPractice
+package com.shapegames.course.InClassPractice.September9th
 
 fun main(){
     val simpleLampTurnOn = Device("Bed Room")
