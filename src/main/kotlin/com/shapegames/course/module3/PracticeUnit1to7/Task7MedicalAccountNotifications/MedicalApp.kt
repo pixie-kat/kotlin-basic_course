@@ -1,0 +1,35 @@
+package com.shapegames.course.module3.PracticeUnit1to7.Task7MedicalAccountNotifications
+
+
+fun main() {
+    val medicalAccountInfo = MedicalAccount("Kathrin")
+    medicalAccountInfo.notify()
+    val doctorAccountInfo = DoctorAccount("Kathrin")
+    doctorAccountInfo.notify()
+    val patientAccountInfo = PatientAccount("Kathrin")
+    patientAccountInfo.notify()
+}
+//Unit 7: Overriding Practice Task
+//Task 1: Medical Account Notifications
+//
+//Suppose you are working on a medical app.
+//
+//Create a base class MedicalAccount with a property username (String) and a function notify() that prints "General medical notification for {username}".
+open class MedicalAccount(val username: String){
+    open fun notify(){
+        println("General medical notification for ${username}")
+    }
+}
+//Create a class DoctorAccount that inherits from MedicalAccount and overrides the notify() function to print "Doctor alert for {username}".
+class DoctorAccount(username: String) : MedicalAccount(username){
+    override fun notify() {
+        println("Doctor alert for ${username}")
+    }
+}
+//Create a class PatientAccount that also inherits from MedicalAccount and overrides the notify() function to print "Patient reminder for {username}".
+class PatientAccount(username: String): MedicalAccount(username){
+    final override fun notify() {
+        println("Patient reminder for ${username}")
+    }
+}
+//Create objects of each type and call their notify() function to see the different messages.
