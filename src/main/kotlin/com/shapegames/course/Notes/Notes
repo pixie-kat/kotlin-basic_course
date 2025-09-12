@@ -1,0 +1,34 @@
+Abstract classes
+https://www.geeksforgeeks.org/kotlin/kotlin-abstract-class
+https://www.programiz.com/kotlin-programming/abstract-class
+https://kotlinlang.org/docs/classes.html#abstract-classes
+
+you cannot create an object from it directly
+you can only inherit from that class
+
+abstract class is there to add general ideas, not specific params that need to be used
+ Abstract classes are always open. You do not need to explicitly use open keyword to inherit subclasses from them.
+
+
+
+Interfaces
+https://kotlinlang.org/docs/interfaces.html
+https://www.programiz.com/kotlin-programming/interfaces
+https://www.geeksforgeeks.org/kotlin/kotlin-interfaces/
+https://www.baeldung.com/kotlin/interfaces
+
+set of functions (or parameters) that a class need to implement
+Kotlin interfaces are similar to abstract classes. However, interfaces cannot store state whereas abstract classes can.
+
+Meaning, interface may have property but it needs to be abstract or has to provide accessor implementations. Whereas, it's not mandatory for property of an abstract class to be abstract.
+
+
+read up on polymorphism
+https://medium.com/@basdoganahmetcaner/using-polymorphism-in-kotlin-f380b0689b40
+https://www.geeksforgeeks.org/kotlin/polymorphism-in-kotlin/
+https://medium.com/@kemal_codes/kotlin-inheritance-and-polymorphism-a-comprehensive-guide-84e1d81437e4
+
+
+can only inherit from two classes
+
+
