@@ -31,11 +31,12 @@ Assignment 3: Arithmetic Operators
 Task:
 Create width and height variables. Find the area of a rectangle.
 */
-fun task3() {
+fun task3(i: Int, i1: Int): Int {
     val width = 3;
     val height = 6;
     val area = width * height
     println("The area of a rectangle is width x height. In this example it is $area")
+    return area
 }
 
 /*
