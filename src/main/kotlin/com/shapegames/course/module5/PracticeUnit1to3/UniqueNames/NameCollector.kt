@@ -14,8 +14,8 @@ fun main() {
 }
 
 class NameCollector {
-    fun setUniqueNames(): List<String> {
-        val uniqueNames = listOfNames.distinct()
+    fun setUniqueNames(): Set<String> {
+        val uniqueNames: Set<String> = listOfNames.distinct().toSet()
         println(uniqueNames)
         return uniqueNames
 
