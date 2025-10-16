@@ -1,0 +1,11 @@
+package com.shapegames.course.module5.PracticeUnit1to3.FrequencyCounter
+
+/*
+2. Frequency Counter
+Create a class called FrequencyCounter.
+Write a function that takes a list of words and returns a map with each word and the number of times it appears in the list.
+ */
+
+class FrequencyCounter {
+
+}
