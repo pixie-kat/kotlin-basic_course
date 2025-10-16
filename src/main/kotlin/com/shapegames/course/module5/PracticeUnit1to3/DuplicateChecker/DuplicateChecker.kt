@@ -6,7 +6,7 @@ Create a class called DuplicateChecker.
 Write a function that takes a set of numbers and a number to check, and returns true if the number is already in the set, otherwise false.
  */
 
-var setOfNumbers = mutableListOf<Int>(1, 2, 3, 4)
+var setOfNumbers = mutableSetOf<Int>(1, 2, 3, 4)
 var number = 99
 
 fun main() {
